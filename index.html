@@ -13,44 +13,45 @@
     <h3>Figure out what the shipping rate is below</h3>
       <div class="row">  
         <div class="col-md-3">
-          <form id="triangle">
-            <div class="form-group">
-              <h4>Enter the side sizes</h4>
-              <label for="Side A">Side A: </label>
-              <input id="side-a" type="text">
-            </div>
-            <div class="form-group">
-              <label for="Side B">Side B: </label>
-              <input id="side-b" type="text">
-            </div>
-            <div class="form-group">
-              <label for="Side C">Side C: </label>
-              <input id="side-c" type="text">
-            </div>
 
-            <button type="submit" id="btn">Get results!</button>
+          <form id="shipment-details" class="form-group">
+            
+              <h4>Ship From/To</h4>
+              <p>From</p>
+              <label for="from-country">Country: </label>
+              <input id="from-country" type="text">
+            
+            
+              <label for="from-zip">Zip: </label>
+              <input id="from-zip" type="text">
+            
+            
+              <p>To</p>
+              <label for="to-country">Country: </label>
+              <input id="to-country" type="text">
+            
+            
+              <label for="to-zip">Zip: </label>
+              <input id="to-zip" type="text">
+            
+            
+              <p>Additional Information</p>
+              <label for="weight">Weight: </label>
+              <input id="weight" type="text">
+            
+            
+              <label for="pickup">Pickup/Dropoff: </label>
+              <input id="pickup" type="radio" value="pickup">Pickup
+              <input id="pickup" type="radio" value="dropoff">Dropoff
+            
+
+            <button type="submit" id="btn">Get quote!</button>
           </form>
         </div>
-        <div class="col-md-3">
+          <div class="col-md-3">
 
-          <h4>Equilateral</h4>
-          <ul id="equilateral">
-
-          </ul>
-        </div>
-        <div class="col-md-3">  
-          <h4>Isosceles</h4>
-          <ul id="isosceles">
-
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>Scalene</h4>
-          <ul id="scalene">
-
-          </ul>
-        </div>
-      </div>
+          <h2 id="results"></h2>
+          </div>
     </div>
   </body>
 </html>
